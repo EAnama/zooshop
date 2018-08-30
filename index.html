@@ -42,7 +42,38 @@
                 <img src="images/cat.png" height="100"/>
             </div>
         </td>
-        <td height="500" valign="top">Контент</td>
+        <td height="500" valign="top">
+            <h2>Форма регистрации</h2>
+            <form>
+
+                <input type="text" size="30" required name="firstname" placeholder="Ваше имя"/><font color="red">*</font><br><br>
+
+                <input type="text" size="30" required name="lastname" placeholder="Ваша фамилия"/><font color="red">*</font><br><br>
+
+                <label>Ваш пол <font color="red">*</font></label><br>
+                <input type="radio" required name="gender"/>Мужской<br>
+                <input type="radio" checkedked name="gender"/>Женский<br>
+                <br>
+                <input type="text" required name="login" placeholder="Введите ваш логин"><font color="red">*</font><br><br>
+                <input type="password" required name="password" placeholder="Введите пароль"><font color="red">*</font><br><br>
+                <input type="password" required name="password" placeholder="Повторите пароль"><font color="red">*</font><br><br>
+                <input type="email" required name="email" placeholder="Введите ваш Email"><font color="red">*</font><br><br>
+
+                <textarea rows="5" placeholder="Расскажите о себе"></textarea><br><br>
+
+                <label for="avatar">Выберите аватар<font color="red">*</font><br><br>
+                    <input type="file" id="avatar" name="avatar" placeholder="Выберите картинку для аватара"> <br><br>
+
+                <input type="checkbox" required name="license" value="Согласен"/>Я принимаю условия лицензионного соглашения <font color="red">*</font><br><br>
+                <input type="checkbox" name="advertisment" value="Согласен"/>Я хочу получать рассылку о новых товарах для животных  <br><br>
+
+                <input type="submit" value="Зарегистрироваться"/>&nbsp;
+                <input type="reset" value="Очистить"/>
+
+
+
+            </form>
+        </td>
         <td width="200" valign="top" bgcolor="#5f5dc">
 
             <div id="feed">
@@ -81,10 +112,12 @@
     </tr>
     <tr bgcolor="556c2c">
         <td height="100" colspan="1" align="center">
-            <font color="#fff">+380975172476</font>
+            <font color="#fff" size="5">+380975172476</font>
         </td>
         <td colspan="2">
+            <font color="#fff" size="5">+380975172476
             <b>Одесская область, Савранский район</b>
+            </font>
         </td>
     </tr>
 </table>

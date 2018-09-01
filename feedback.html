@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Зоомагазин</title>
+    <title>Обратная свзь - Зоомагазин</title>
 </head>
 <body>
 
@@ -28,10 +28,46 @@
                     <li> <a href="Price.html">Прайс лист</a></li><br>
                     <li> <a href="register.html">Регистрация</a></li><br>
                     <li> <a href="order.html">Заказ</a></li><br>
-                    <li> <a href="contacts.html">Контакты</a></li>
+                    <li> <a href="contacts.html">Контакты</a></li><br>
+                    <li> <a href="feedback.html">Обратная связь</a></li>
                 </ul>
             </div>
-        <td height="500" valign="top" bgcolor="#faebd7">
+        <td height="" valign="top" bgcolor="#faebd7">
+
+        <p><font color="blue"size="4">Если у вас есть вопросы либо вы хотите оставить отзыв о работе сайта - заполните форму обратной связи, и наши менеджеры в кратчайшие сроки свяжутся с вами</font> </p>
+
+        <form class="contact_form" action="contact-form.php" method="post">
+            <p>
+                <label for="name">Имя:</label><br>
+                <input type="text"  name="name" placeholder="Введите ваше имя" required />
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" placeholder="Введите электронный адрес" required />
+
+            </p>
+            <p>
+                <label for="tel">Телефон:</label><br>
+                <input type="tel" name="tel" placeholder="Введите номер телефона" required />
+
+            </p>
+            <p>
+                <label for="website">Сайт:</label><br>
+                <input type="url" name="website" placeholder="Введите адрес вашего сайта" pattern="(http|https)://.+"/>
+
+            </p>
+            <p>
+                <label for="message">Текст сообщения:</label> <br>
+                <textarea name="message" cols="40" rows="6" required ></textarea>
+            </p>
+            <input name="bezspama" type="text" style="display:none" value="" />
+            <p>
+                <button class="submit" type="submit">Отправить сообщение</button>
+            </p>
+        </form>
+
+
+
         </td>
     </tr>
 
